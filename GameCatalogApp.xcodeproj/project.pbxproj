@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C008CD62D56757700225417 /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 2C008CD52D56757100225417 /* codemagic.yaml */; };
 		2C6CF6A62D4488BE001B7123 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2C6CF6A52D4488BE001B7123 /* Kingfisher */; };
 		2C6CF72E2D4614C0001B7123 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2C6CF72D2D4614C0001B7123 /* .swiftlint.yml */; };
 		2C6CF85F2D4882BD001B7123 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2C6CF85E2D4882BD001B7123 /* Alamofire */; };
@@ -29,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C008CD52D56757100225417 /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 		2C668C112D44037600A12247 /* GameCatalogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameCatalogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6CF72D2D4614C0001B7123 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 		2C668C082D44037600A12247 = {
 			isa = PBXGroup;
 			children = (
+				2C008CD52D56757100225417 /* codemagic.yaml */,
 				2C6CF72D2D4614C0001B7123 /* .swiftlint.yml */,
 				2C668C132D44037600A12247 /* GameCatalogApp */,
 				2C668C122D44037600A12247 /* Products */,
@@ -165,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C008CD62D56757700225417 /* codemagic.yaml in Resources */,
 				2C6CF72E2D4614C0001B7123 /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
