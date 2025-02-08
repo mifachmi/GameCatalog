@@ -10,7 +10,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "Core",
-            targets: ["Core"]),
+            targets: ["Core"])
     ],
     dependencies: [
         // Added dependencies for Alamofire, Kingfisher, RxSwift, and Swinject
@@ -34,6 +34,6 @@ let package = Package(
         .testTarget(
             name: "CoreTests",
             dependencies: ["Core"]
-        ),
+        )
     ]
 )
