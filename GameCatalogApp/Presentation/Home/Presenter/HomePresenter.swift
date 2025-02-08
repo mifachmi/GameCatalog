@@ -23,15 +23,11 @@ class HomePresenter {
     
     private(set) var games: [GameModel] = []
     
-    private var isLoading = false
-    
     init(homeUseCase: HomeUseCase) {
         self.homeUseCase = homeUseCase
     }
     
     func getGames(pageSize: Int) {
-        guard !isLoading else { return }
-        isLoading = true
         output?.willStartLoading()
         
         homeUseCase.getGames(pageSize: pageSize)
@@ -39,13 +35,11 @@ class HomePresenter {
             .observe(on: MainScheduler.instance)
             .subscribe(
                 onNext: { [weak self] games in
-                    self?.isLoading = false
                     self?.games = games
                     self?.output?.didFinishLoading()
                     self?.output?.didGetGames(games)
                 },
                 onError: { [weak self] error in
-                    self?.isLoading = false
                     self?.output?.didFinishLoading()
                     self?.output?.didFailGetGames(with: error)
                 }

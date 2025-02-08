@@ -120,11 +120,13 @@ extension HomeViewController: HomeCollectionViewCellDelegate {
 
 extension HomeViewController: HomePresenterOutput {
     func willStartLoading() {
+        homeCollectionView.isHidden = true
         loadingIndicator.startAnimating()
     }
     
     func didFinishLoading() {
         loadingIndicator.stopAnimating()
+        homeCollectionView.isHidden = false
     }
     
     func didGetGames(_ games: [GameModel]) {
