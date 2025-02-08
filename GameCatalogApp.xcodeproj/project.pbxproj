@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C008CD62D56757700225417 /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 2C008CD52D56757100225417 /* codemagic.yaml */; };
 		2C008CD82D56776400225417 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C008CD72D56775F00225417 /* README.md */; };
+		2C008DDE2D570B8E00225417 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 2C008DDD2D570B8E00225417 /* Core */; };
 		2C6CF6A62D4488BE001B7123 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2C6CF6A52D4488BE001B7123 /* Kingfisher */; };
 		2C6CF72E2D4614C0001B7123 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2C6CF72D2D4614C0001B7123 /* .swiftlint.yml */; };
 		2C6CF85F2D4882BD001B7123 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2C6CF85E2D4882BD001B7123 /* Alamofire */; };
@@ -91,6 +92,7 @@
 				2C6CF8642D488321001B7123 /* RxCocoa in Frameworks */,
 				2C6CF85F2D4882BD001B7123 /* Alamofire in Frameworks */,
 				2C6CF8692D48838D001B7123 /* Swinject in Frameworks */,
+				2C008DDE2D570B8E00225417 /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +170,7 @@
 				2C6CF8632D488321001B7123 /* RxCocoa */,
 				2C6CF8652D488321001B7123 /* RxSwift */,
 				2C6CF8682D48838D001B7123 /* Swinject */,
+				2C008DDD2D570B8E00225417 /* Core */,
 			);
 			productName = GameCatalogApp;
 			productReference = 2C668C112D44037600A12247 /* GameCatalogApp.app */;
@@ -207,6 +210,7 @@
 				2C6CF85D2D4882BD001B7123 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				2C6CF8622D488321001B7123 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				2C6CF8672D48838D001B7123 /* XCRemoteSwiftPackageReference "Swinject" */,
+				2C008ED72D570C2400225417 /* XCLocalSwiftPackageReference "Module/Core" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2C668C122D44037600A12247 /* Products */;
@@ -530,6 +534,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		2C008ED72D570C2400225417 /* XCLocalSwiftPackageReference "Module/Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Module/Core;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		2C668C3C2D44818E00A12247 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -574,6 +585,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2C008DDD2D570B8E00225417 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
 		2C6CF6A52D4488BE001B7123 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2C6CF6A42D4488BE001B7123 /* XCRemoteSwiftPackageReference "Kingfisher" */;
