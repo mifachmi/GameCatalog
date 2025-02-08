@@ -316,10 +316,14 @@ extension DetailGameView {
         let genre = game.genres?.isEmpty ?? true ? "Unknown" : game.genres?.map { $0.name! }.joined(separator: ", ")
         genreLabel.text = genre
         
-        let alternativeNames = game.alternativeNames?.isEmpty ?? true ? "No Available Alternative Names" : game.alternativeNames?.joined(separator: ", ")
+        let dataAlternativeNames = game.alternativeNames
+        let alternativeNames = dataAlternativeNames?.isEmpty ?? true
+        ? "No Available Alternative Names" : dataAlternativeNames?.joined(separator: ", ")
         alternativeNamesLabel.text = alternativeNames
         
-        let publisherNames = game.publishers?.isEmpty ?? true ? "No Available Publisher" : game.publishers?.map { $0.name ?? "" }.joined(separator: ", ")
+        let dataPublisher = game.publishers
+        let publisherNames = dataPublisher?.isEmpty ?? true ?
+        "No Available Publisher" : dataPublisher?.map { $0.name ?? "" }.joined(separator: ", ")
         publisherLabel.text = publisherNames
         
         if let backgroundImage = game.backgroundImage,

@@ -58,7 +58,10 @@ struct GameResponse: Codable {
             forKey: .publishers
         ) ?? [PublisherResponse(name: StringConstant.unknown)]
         self.backgroundImage = try container.decodeIfPresent(String.self, forKey: .backgroundImage)
-        self.alternativeNames = try container.decodeIfPresent([String].self, forKey: .alternativeNames) ?? [StringConstant.unknown]
+        self.alternativeNames = try container.decodeIfPresent(
+            [String].self,
+            forKey: .alternativeNames
+        ) ?? [StringConstant.unknown]
     }
 }
 
